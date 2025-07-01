@@ -22,7 +22,7 @@ public class FileUtils {
             System.out.println("Writing to: "+path.getAbsolutePath());
             new FileWriter(path, false).close();
             BufferedWriter writer = new BufferedWriter(new FileWriter(path, true));
-            String[] words = content.split("/n");
+            String[] words = content.split("[^.]/n");
             for (String word : words) {
                 writer.write(word);
                 writer.newLine();

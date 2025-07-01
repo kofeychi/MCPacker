@@ -10,6 +10,8 @@ repositories {
 }
 
 dependencies {
+    // https://mvnrepository.com/artifact/commons-io/commons-io
+    implementation("commons-io:commons-io:2.19.0")
     implementation("com.google.guava:guava:33.4.8-jre")
     implementation("com.google.code.gson:gson:2.13.1")
 }

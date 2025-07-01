@@ -45,3 +45,6 @@ bin/
 
 
 /.idea
+/run/
+*.json
+run/neko_left.json

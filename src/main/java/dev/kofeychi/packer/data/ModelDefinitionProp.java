@@ -20,7 +20,7 @@ public class ModelDefinitionProp implements Prop {
         return this;
     }
     public ModelDefinitionProp withPredicate(String pred) {
-        this.predicate.val = "pattern:"+pred;
+        this.predicate.val = pred;
         return this;
     }
     @Override

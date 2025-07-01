@@ -9,7 +9,6 @@ import java.util.List;
 public class Consts {
     public static final Gson gson = new GsonBuilder()
             .setPrettyPrinting()
-            .serializeNulls()
             .disableHtmlEscaping()
             .create();
     public static final ListPropEntry DEFAULT_SWORDS = new ListPropEntry("items", List.of(

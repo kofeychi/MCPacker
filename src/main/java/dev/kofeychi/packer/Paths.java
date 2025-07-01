@@ -16,7 +16,7 @@ public enum Paths {
     OPTIFINE(MC,"optifine"),
     CIT(OPTIFINE,"cit"),
     EMISSIVE(OPTIFINE,"emissive.properties",true),
-    PACK(GEN,"pack.json",true),
+    PACK(GEN,"pack.mcmeta",true),
     OUT(ROOTDIR,"out.zip",true)
     ;
     private String path;
@@ -79,6 +79,9 @@ public enum Paths {
     public Path asPath(String additional){
         return Path.of(path+"_"+additional).toAbsolutePath();
     }
+    public Path withPath(String path){
+        return Path.of(this.path).resolve(path).toAbsolutePath();
+    }
     public String asString(){
         return path;
     }
@@ -132,7 +135,6 @@ public enum Paths {
         return asPath().toFile();
     }
     public void verify(){
-        verifyFile();
         if(isFile){
             verifyFile();
         } else {

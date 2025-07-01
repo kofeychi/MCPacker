@@ -6,4 +6,5 @@ public class Element {
     public float[] from;
     public float[] to;
     public HashMap<String,Face> faces;
+    public Rotation rotation;
 }

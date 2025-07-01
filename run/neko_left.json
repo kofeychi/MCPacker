@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"1": "neko",
-		"particle": "neko"
+		"1": "neko/neko",
+		"particle": "neko/neko"
 	},
 	"elements": [
 		{
